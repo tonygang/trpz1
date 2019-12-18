@@ -1,0 +1,33 @@
+D:\КПИ\3 курс (1)\lab1\lab1\bin\Debug\lab1.Screens.dll
+D:\КПИ\3 курс (1)\lab1\lab1\bin\Debug\lab1.Screens.pdb
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\ResolveAssemblyReference.cache
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\Component.baml
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\Screen 1.baml
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\Screen 1_3.baml
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\Screen 1_4.baml
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\Screen 1_5.baml
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\Screen 1_6.baml
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\Screen 2.baml
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\SketchStyles.baml
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\Component.g.cs
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\Screen 1.g.cs
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\Screen 1_1.g.cs
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\Screen 1_2.g.cs
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\Screen 1_3.g.cs
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\Screen 1_4.g.cs
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\Screen 1_5.g.cs
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\Screen 1_6.g.cs
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\Screen 2.g.cs
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\Screen 2_1.g.cs
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\Screen 3.g.cs
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\Screen 4.g.cs
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\lab1.Screens_MarkupCompile.cache
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\lab1.Screens_MarkupCompile.lref
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\Screen 1_1.baml
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\Screen 1_2.baml
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\Screen 2_1.baml
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\Screen 3.baml
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\Screen 4.baml
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\lab1.Screens.g.resources
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\lab1.Screens.dll
+D:\КПИ\3 курс (1)\lab1\lab1\lab1Screens\obj\Debug\lab1.Screens.pdb

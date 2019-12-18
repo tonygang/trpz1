@@ -1,0 +1,30 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:pb="clr-namespace:Microsoft.Expression.Prototyping.Behavior;assembly=Microsoft.Expression.Prototyping.Interactivity" x:Name="Screen_2_2_Name"
+	x:Class="lab1Screens.Screen_2_2"
+	Width="640" Height="480">
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<TextBlock Margin="241.2,51.206,249.747,0" VerticalAlignment="Top" Height="74.394" RenderTransformOrigin="1.009,0.282" FontFamily="Segoe Script" FontSize="48" FontWeight="Bold" TextWrapping="Wrap" Text="Вход"/>
+		<TextBlock Margin="67.6,180.206,250.547,0" RenderTransformOrigin="0.605,0.515" FontFamily="Segoe Script" FontSize="24" FontWeight="Bold" TextWrapping="Wrap" Text="Электронная почта" VerticalAlignment="Top" Height="30.194"/>
+		<TextBox Margin="67.6,214.4,76.417,228.64" Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" FontSize="24"/>
+		<Button Margin="67.6,0,76.417,161.823" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Height="36.96" Content="Получить временный пароль" FontSize="26.667" RenderTransformOrigin="1.945,-3.679" FontFamily="Segoe Script" BorderBrush="#FF3ECF71" FontWeight="Bold">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pb:NavigateToScreenAction TargetScreen="lab1Screens.Screen_1_1"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<TextBlock Margin="169.2,0,171.347,52.96" VerticalAlignment="Bottom" Height="36.96" TextWrapping="Wrap" FontSize="21.333" FontFamily="Segoe Script" Foreground="#FF57B4D0" Text="Я вспомнил свой пароль" FontStyle="Italic">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="MouseDown">
+					<pb:NavigateToScreenAction TargetScreen="lab1Screens.Screen_1"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</TextBlock>
+	</Grid>
+</UserControl>

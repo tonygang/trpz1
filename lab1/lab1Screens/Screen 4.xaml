@@ -1,0 +1,33 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	xmlns:local="clr-namespace:lab1Screens" xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:pb="clr-namespace:Microsoft.Expression.Prototyping.Behavior;assembly=Microsoft.Expression.Prototyping.Interactivity" x:Name="Screen_4_Name"
+	x:Class="lab1Screens.Screen_4"
+	Width="640" Height="480">
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<TextBlock Margin="50.8,63.706,29.747,0" RenderTransformOrigin="1.009,0.282" FontFamily="Segoe Script" FontSize="37.333" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Height="60.394" Text="Благотворительный взнос"/>
+		<TextBlock Margin="50.8,136.854,29.747,237.9" RenderTransformOrigin="0.623,-0.709" FontFamily="Segoe Script" FontSize="18.667" TextWrapping="Wrap" Text="Все пожертвования пойдут на улучшение производительности приложения"/>
+		<TextBlock Margin="50.8,227.954,29.747,221.2" RenderTransformOrigin="0.623,-0.709" FontFamily="Segoe Script" FontSize="18.667" TextWrapping="Wrap" FontWeight="Bold" Text="Выберите удобный вариант оплаты:"/>
+		<RadioButton Margin="50.8,0,198,193.2" VerticalAlignment="Bottom" Height="24" Content="Банковская карта Visa/MasterCard" FontFamily="Segoe Script" FontSize="18.667"/>
+		<RadioButton HorizontalAlignment="Left" Margin="50.8,0,0,161.2" VerticalAlignment="Bottom" Width="106.4" Height="28" Content="PayPal" FontFamily="Segoe Script" FontSize="18.667"/>
+		<Button Margin="0,0,29.747,26" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Height="36.96" Content="Выйти" FontSize="26.667" RenderTransformOrigin="1.945,-3.679" HorizontalAlignment="Right" Width="130.053" FontFamily="Segoe Script">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pb:NavigateToScreenAction TargetScreen="lab1Screens.Screen_1"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<local:BackBtn HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="50.853" Height="36.96" d:IsPrototypingComposition="True" Margin="50.8,0,0,26">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="MouseDown">
+					<pb:NavigateToScreenAction TargetScreen="lab1Screens.Screen_1_1"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</local:BackBtn>
+		<Button HorizontalAlignment="Left" Margin="50.8,0,0,102.8" VerticalAlignment="Bottom" Width="130.053" Height="36.8" Content="Готово" Background="{x:Null}" Style="{DynamicResource Button-Sketch}" FontFamily="Segoe Script" FontSize="26.667"/>
+	</Grid>
+</UserControl>

@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab1", "lab1\lab1.csproj", "{301829C7-CC72-4010-A93B-691B543DF764}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab1Screens", "lab1\lab1Screens\lab1Screens.csproj", "{9CF36166-84DB-4DA3-BDF9-5EB6833A837E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{301829C7-CC72-4010-A93B-691B543DF764}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{301829C7-CC72-4010-A93B-691B543DF764}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{301829C7-CC72-4010-A93B-691B543DF764}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{301829C7-CC72-4010-A93B-691B543DF764}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CF36166-84DB-4DA3-BDF9-5EB6833A837E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CF36166-84DB-4DA3-BDF9-5EB6833A837E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CF36166-84DB-4DA3-BDF9-5EB6833A837E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CF36166-84DB-4DA3-BDF9-5EB6833A837E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

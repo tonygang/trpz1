@@ -1,0 +1,275 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ExpressionBlendVersion>3.0.1927.0</ExpressionBlendVersion>
+    <ProjectGuid>{9cf36166-84db-4da3-bdf9-5eb6833a837e}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <DefaultClrNameSpace>lab1Screens</DefaultClrNameSpace>
+    <RootNamespace>lab1Screens</RootNamespace>
+    <AssemblyName>lab1.Screens</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.*</ApplicationVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <AlwaysCompileMarkupFilesInSeparateDomain>false</AlwaysCompileMarkupFilesInSeparateDomain>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <PropertyGroup>
+    <ExpressionBlendPrototypingEnabled>true</ExpressionBlendPrototypingEnabled>
+    <ExpressionBlendPrototypeHarness>false</ExpressionBlendPrototypeHarness>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="WPFToolkit" />
+    <Reference Include="System.Windows.Interactivity" />
+    <Reference Include="Microsoft.Expression.Interactions" />
+    <Reference Include="Microsoft.Expression.Prototyping.Interactivity" />
+    <Reference Include="Microsoft.Expression.Prototyping.Runtime" />
+    <Reference Include="Microsoft.Expression.Prototyping.SketchControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="BackBtn.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Component.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ProjectDataSources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <ContainsDataSources>True</ContainsDataSources>
+    </Page>
+    <Page Include="SampleData\SampleDataSource1\SampleDataSource1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SampleData\SampleDataSource2\SampleDataSource2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SampleData\SampleDataSource\SampleDataSource.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen 1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen 1_1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen 1_10.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen 1_2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen 1_3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen 1_4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen 1_5.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen 1_6.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen 1_7.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen 1_8.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen 1_9.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen 2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen 2_1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen 2_2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen 2_3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen 2_4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen 3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen 4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SketchStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Resource Include="Fonts\BuxtonSketch.ttf" />
+    <Resource Include="Fonts\SketchFlow Print.ttf" />
+    <Resource Include="Fonts\SegoeMarker.ttf" />
+    <Resource Include="Image1.png" />
+    <Resource Include="Image2.png" />
+    <Resource Include="Image3.png" />
+    <Resource Include="Image4.png" />
+    <Resource Include="Image5.png" />
+    <Resource Include="Image6.png" />
+    <Resource Include="Image7.png" />
+    <Resource Include="SampleData\SampleDataSource1\SampleDataSource1_Files\image01.png" />
+    <Resource Include="SampleData\SampleDataSource1\SampleDataSource1_Files\image02.png" />
+    <Resource Include="SampleData\SampleDataSource1\SampleDataSource1_Files\image03.png" />
+    <Resource Include="SampleData\SampleDataSource1\SampleDataSource1_Files\image04.png" />
+    <Resource Include="SampleData\SampleDataSource1\SampleDataSource1_Files\image05.png" />
+    <Resource Include="SampleData\SampleDataSource2\SampleDataSource2_Files\image01.png" />
+    <Resource Include="SampleData\SampleDataSource2\SampleDataSource2_Files\image02.png" />
+    <Resource Include="SampleData\SampleDataSource2\SampleDataSource2_Files\image03.png" />
+    <Resource Include="SampleData\SampleDataSource2\SampleDataSource2_Files\image04.png" />
+    <Resource Include="SampleData\SampleDataSource2\SampleDataSource2_Files\image05.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\image01.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\image02.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\image03.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\image04.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\image05.png" />
+    <Resource Include="Sketch.Flow" />
+    <Compile Include="BackBtn.xaml.cs">
+      <DependentUpon>BackBtn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Component.xaml.cs">
+      <DependentUpon>Component.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleData\SampleDataSource1\SampleDataSource1.xaml.cs">
+      <DependentUpon>SampleDataSource1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SampleData\SampleDataSource2\SampleDataSource2.xaml.cs">
+      <DependentUpon>SampleDataSource2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SampleData\SampleDataSource\SampleDataSource.xaml.cs">
+      <DependentUpon>SampleDataSource.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen 1.xaml.cs">
+      <DependentUpon>Screen 1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen 1_1.xaml.cs">
+      <DependentUpon>Screen 1_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen 1_10.xaml.cs">
+      <DependentUpon>Screen 1_10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen 1_2.xaml.cs">
+      <DependentUpon>Screen 1_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen 1_3.xaml.cs">
+      <DependentUpon>Screen 1_3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen 1_4.xaml.cs">
+      <DependentUpon>Screen 1_4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen 1_5.xaml.cs">
+      <DependentUpon>Screen 1_5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen 1_6.xaml.cs">
+      <DependentUpon>Screen 1_6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen 1_7.xaml.cs">
+      <DependentUpon>Screen 1_7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen 1_8.xaml.cs">
+      <DependentUpon>Screen 1_8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen 1_9.xaml.cs">
+      <DependentUpon>Screen 1_9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen 2.xaml.cs">
+      <DependentUpon>Screen 2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen 2_1.xaml.cs">
+      <DependentUpon>Screen 2_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen 2_2.xaml.cs">
+      <DependentUpon>Screen 2_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen 2_3.xaml.cs">
+      <DependentUpon>Screen 2_3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen 2_4.xaml.cs">
+      <DependentUpon>Screen 2_4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen 3.xaml.cs">
+      <DependentUpon>Screen 3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen 4.xaml.cs">
+      <DependentUpon>Screen 4.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <DesignTimeOnly Include="SampleData\SampleDataSource\SampleDataSource.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <DesignTimeOnly Include="SampleData\SampleDataSource1\SampleDataSource1.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <DesignTimeOnly Include="SampleData\SampleDataSource2\SampleDataSource2.xsd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,39 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:pb="clr-namespace:Microsoft.Expression.Prototyping.Behavior;assembly=Microsoft.Expression.Prototyping.Interactivity" xmlns:local="clr-namespace:lab1Screens" x:Name="Screen_2_Name"
+	x:Class="lab1Screens.Screen_2"
+	Width="640" Height="480">
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<Grid HorizontalAlignment="Left" Margin="268,104.4,0,0" VerticalAlignment="Top" Width="49.29" Height="15.96">
+			<UniformGrid/>
+		</Grid>
+		<TextBlock Margin="138.8,8,131.147,0" VerticalAlignment="Top" Height="57.594" RenderTransformOrigin="0.605,0.515" FontFamily="Segoe Script" FontSize="48" FontWeight="Bold" TextWrapping="Wrap" Text="Регистрация"/>
+		<TextBlock Margin="72,74.566,0,0" VerticalAlignment="Top" Height="30.194" RenderTransformOrigin="0.605,0.515" FontFamily="Segoe Script" FontSize="24" FontWeight="Bold" TextWrapping="Wrap" HorizontalAlignment="Left" Width="163.453" Text="Логин"/>
+		<TextBlock Margin="72,174.354,261.947,0" RenderTransformOrigin="0.605,0.515" FontFamily="Segoe Script" FontSize="24" FontWeight="Bold" TextWrapping="Wrap" Text="Электронный адрес" VerticalAlignment="Top" Height="28.846"/>
+		<TextBox Margin="72,108.76,72.017,0" Style="{DynamicResource TextBox-Sketch}" VerticalAlignment="Top" Height="36.96" TextWrapping="Wrap"/>
+		<TextBlock Margin="72,0,0,189.394" RenderTransformOrigin="0.605,0.515" FontFamily="Segoe Script" FontSize="24" FontWeight="Bold" TextWrapping="Wrap" HorizontalAlignment="Left" Width="224.453" Text="Пароль" VerticalAlignment="Bottom" Height="28.846"/>
+		<Button Margin="0,0,72.017,27.2" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Height="36.96" Content="Войти" FontSize="24" RenderTransformOrigin="1.945,-3.679" HorizontalAlignment="Right" Width="130.053" FontFamily="Segoe Script">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pb:NavigateToScreenAction TargetScreen="lab1Screens.Screen_1"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<TextBox Margin="72,207.2,72.017,235.84" Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" FocusVisualStyle="{DynamicResource TabItemFocusVisual-Sketch}"/>
+		<PasswordBox Margin="72,0,72.017,145.434" VerticalAlignment="Bottom" Height="39.96" Style="{DynamicResource PasswordBox-Sketch}"/>
+		<TextBlock Margin="72,0,261.947,27.2" VerticalAlignment="Bottom" Height="36.96" TextWrapping="Wrap" FontSize="24" FontFamily="Segoe Script" Foreground="#FF57B4D0" Text="Уже есть аккаунт?"/>
+		<Button Margin="162.4,0,161.147,86" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Height="36.96" Content="Зарегстрироваться" FontSize="26.667" RenderTransformOrigin="1.945,-3.679" FontFamily="Segoe Script" FontWeight="Bold">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pb:NavigateToScreenAction TargetScreen="lab1Screens.Screen_1_1"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<local:BackBtn HorizontalAlignment="Left" VerticalAlignment="Top" Width="130.053" Height="36.96" d:IsPrototypingComposition="True"/>
+	</Grid>
+</UserControl>

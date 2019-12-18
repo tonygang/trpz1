@@ -1,0 +1,32 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	xmlns:local="clr-namespace:lab1Screens" xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:pb="clr-namespace:Microsoft.Expression.Prototyping.Behavior;assembly=Microsoft.Expression.Prototyping.Interactivity" x:Name="Screen_2_1_Name"
+	x:Class="lab1Screens.Screen_2_1"
+	Width="640" Height="480">
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<Image HorizontalAlignment="Left" Margin="32,23.2,0,0" VerticalAlignment="Top" Width="151.4" Height="151.4" Source="Image1.png" Stretch="Fill"/>
+		<TextBlock Margin="50.4,202.4,0,0" RenderTransformOrigin="0.623,-0.709" FontFamily="Segoe Script" FontSize="18.667" TextWrapping="Wrap" VerticalAlignment="Top" Height="30.046" HorizontalAlignment="Left" Width="185.853" FontWeight="Bold" Text="Социальные сети"/>
+		<TextBlock Margin="32,232.446,50.964,180.708" RenderTransformOrigin="0.623,-0.709" FontFamily="Segoe Script" TextWrapping="Wrap" FontSize="14.667"><Run Text="С"/><Run Text="вяжите свою учетную запись с учетными записями социальных сетей и заходите в личный кабинет быстро и удобно"/></TextBlock>
+		<TextBlock Margin="228,23.2,226.147,0" RenderTransformOrigin="0.623,-0.709" FontFamily="Segoe Script" FontSize="18.667" TextWrapping="Wrap" VerticalAlignment="Top" Height="30.046" Text="Профиль" FontWeight="Bold"/>
+		<TextBlock Margin="210.4,58.416,0,0" RenderTransformOrigin="0.623,-0.709" FontFamily="Segoe Script" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Width="77.853" Height="26.046" FontSize="14.667" Text="Ф.И.О."/>
+		<TextBlock Margin="210.4,88.462,0,0" RenderTransformOrigin="0.623,-0.709" FontFamily="Segoe Script" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Width="77.853" Height="26.046" Text="Пол" FontSize="14.667"/>
+		<TextBlock Margin="210.4,118.508,0,0" RenderTransformOrigin="0.623,-0.709" FontFamily="Segoe Script" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Width="77.853" Height="26.046" Text="Email" FontSize="14.667"/>
+		<TextBlock Margin="210.4,148.554,290.947,0" RenderTransformOrigin="0.623,-0.709" FontFamily="Segoe Script" TextWrapping="Wrap" VerticalAlignment="Top" Height="26.046" Text="Дата рождения" FontSize="14.667"/>
+		<TextBox Margin="0,58.416,83.764,0" Style="{DynamicResource TextBox-Sketch}" VerticalAlignment="Top" Height="17.222" TextWrapping="Wrap" HorizontalAlignment="Right" Width="185.583" FontSize="12"/>
+		<TextBox Margin="0,118.508,83.764,0" Style="{DynamicResource TextBox-Sketch}" VerticalAlignment="Top" Height="17.222" TextWrapping="Wrap" HorizontalAlignment="Right" Width="185.583" FontSize="12"/>
+		<TextBox Margin="0,148.554,83.764,0" Style="{DynamicResource TextBox-Sketch}" VerticalAlignment="Top" Height="17.222" TextWrapping="Wrap" HorizontalAlignment="Right" Width="185.583" FontSize="12"/>
+		<ComboBox HorizontalAlignment="Right" Margin="0,88.462,83.764,0" Style="{DynamicResource ComboBox-Sketch}" VerticalAlignment="Top" Width="185.583" Height="17.222">
+			<TextBlock Width="100" Height="100" TextWrapping="Wrap"><Run Text="Мужчина"/><LineBreak/><Run Text="Женщина"/><LineBreak/><Run Text="Другое"/></TextBlock>
+			<TextBlock Width="100" Height="100" TextWrapping="Wrap"/>
+		</ComboBox>
+		<TextBlock Margin="50.4,0,0,172.262" RenderTransformOrigin="0.623,-0.709" FontFamily="Segoe Script" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="26.046" HorizontalAlignment="Left" Width="237.853" Foreground="#FF57B4D0" Text="+ Присоединить соц сеть" FontSize="14.667"/>
+		<Button Margin="0,0,29.747,26" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Height="36.96" Content="Выйти" FontSize="26.667" RenderTransformOrigin="1.945,-3.679" HorizontalAlignment="Right" Width="130.053" FontFamily="Segoe Script"/>
+		<Button Margin="32,0,0,131.302" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Height="36.96" Content="Сохранить" FontSize="18.667" RenderTransformOrigin="1.945,-3.679" HorizontalAlignment="Left" Width="151.4" FontFamily="Segoe Script"/>
+		<local:BackBtn HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="51.653" Height="36.96" d:IsPrototypingComposition="True" Margin="32,0,0,26"/>
+	</Grid>
+</UserControl>

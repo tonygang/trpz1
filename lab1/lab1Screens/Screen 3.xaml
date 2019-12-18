@@ -1,0 +1,31 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	xmlns:local="clr-namespace:lab1Screens" xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:pb="clr-namespace:Microsoft.Expression.Prototyping.Behavior;assembly=Microsoft.Expression.Prototyping.Interactivity" x:Name="Screen_3_Name"
+	x:Class="lab1Screens.Screen_3"
+	Width="640" Height="480">
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<TextBlock Margin="50.8,63.706,29.747,225.5" RenderTransformOrigin="1.009,0.282" FontFamily="Segoe Script" FontSize="37.333" FontWeight="Bold" TextWrapping="Wrap" Text="Пригласите своего друга! Вместе - веселее! :)" TextAlignment="Center"/>
+		<TextBlock Margin="50.8,225.654,117.547,225.5" RenderTransformOrigin="0.623,-0.709" FontFamily="Segoe Script" FontSize="24" TextWrapping="Wrap"><Run Text="Электронный адрес"/><Run Text=" вашего друга"/></TextBlock>
+		<TextBox Margin="50.8,0,93.217,184.54" Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" FocusVisualStyle="{DynamicResource TabItemFocusVisual-Sketch}" VerticalAlignment="Bottom" Height="36.96"/>
+		<TextBlock Margin="50.8,0,29.747,87.5" RenderTransformOrigin="0.623,-0.709" FontFamily="Segoe Script" FontSize="18.667" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="56.446"><Run Text="Как только по вашей "/><Run Text="с"/><Run Text="сылке зарегистрируются - вам придет уведомлени"/><Run Text="е"/><Run Text=" "/></TextBlock>
+		<Button Margin="0,0,29.747,26" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Height="36.96" Content="Выйти" FontSize="26.667" RenderTransformOrigin="1.945,-3.679" HorizontalAlignment="Right" Width="130.053" FontFamily="Segoe Script">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pb:NavigateToScreenAction TargetScreen="lab1Screens.Screen_1"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<local:BackBtn HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="51.653" Height="36.96" d:IsPrototypingComposition="True" Margin="50.8,0,0,26" RenderTransformOrigin="-0.055,0.416">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="MouseDown">
+					<pb:NavigateToScreenAction TargetScreen="lab1Screens.Screen_1_1"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</local:BackBtn>
+	</Grid>
+</UserControl>

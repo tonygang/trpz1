@@ -1,0 +1,68 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:pb="clr-namespace:Microsoft.Expression.Prototyping.Behavior;assembly=Microsoft.Expression.Prototyping.Interactivity" xmlns:local="clr-namespace:lab1Screens" x:Name="Screen_1_4_Name"
+	x:Class="lab1Screens.Screen_1_4"
+	Width="640" Height="480">
+	<UserControl.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="ProjectDataSources.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+			<DataTemplate x:Key="ItemTemplate">
+				<StackPanel>
+					<TextBlock Text="{Binding Property1}"/>
+					<Image Source="{Binding Property2}" HorizontalAlignment="Left" Height="64" Width="64"/>
+					<TextBlock Text="{Binding Property3}"/>
+				</StackPanel>
+			</DataTemplate>
+		</ResourceDictionary>
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot" Background="White" DataContext="{Binding Source={StaticResource SampleDataSource1}}">
+		<ListBox Margin="32,24.8,153.747,88.8" ItemTemplate="{DynamicResource ItemTemplate}" ItemsSource="{Binding Users}"/>
+		<Button Margin="105.253,0,153.747,22.8" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Height="36.96" Content="Добавить пользователя" FontSize="18.667" RenderTransformOrigin="1.945,-3.679" FontFamily="Segoe Script">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pb:NavigateToScreenAction TargetScreen="lab1Screens.Screen_1_7"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button Margin="0,0,18.547,22.8" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Height="36.96" Content="Выйти" FontSize="26.667" RenderTransformOrigin="1.945,-3.679" HorizontalAlignment="Right" Width="122.853" FontFamily="Segoe Script">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pb:NavigateToScreenAction TargetScreen="lab1Screens.Screen_1"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<local:BackBtn HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="51" Height="36.96" d:IsPrototypingComposition="True" Margin="32,0,0,22.8" RenderTransformOrigin="0.647,0.464">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="MouseDown">
+					<pb:NavigateToScreenAction TargetScreen="lab1Screens.Screen_1_5"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</local:BackBtn>
+		<TextBlock HorizontalAlignment="Right" Margin="0,57.4,105.6,0" VerticalAlignment="Top" Width="35.8" Height="23" FontFamily="Segoe Script" FontSize="16" Text="ID:" TextWrapping="Wrap"/>
+		<Button HorizontalAlignment="Right" Margin="0,188.4,18.547,235.6" Style="{DynamicResource Button-Sketch}" Width="122.853" Content="Открыть&#xd;&#xa;профиль" FontFamily="Segoe Script" FontSize="16" RenderTransformOrigin="0.468,-1.018">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pb:NavigateToScreenAction TargetScreen="lab1Screens.Screen_2_3"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<TextBlock HorizontalAlignment="Right" Margin="0,24.8,78.853,0" VerticalAlignment="Top" Width="62.547" Height="32.6" FontFamily="Segoe Script" FontSize="16" Text="Поиск:" TextWrapping="Wrap" FontWeight="Bold"/>
+		<TextBox HorizontalAlignment="Right" Margin="0,84.4,18.547,0" VerticalAlignment="Top" Width="122.853" Height="23" TextWrapping="Wrap" FontFamily="Segoe Script" FontSize="14.667" RenderTransformOrigin="0.199,0.522"/>
+		<TextBlock HorizontalAlignment="Right" Margin="0,107.4,40.8,0" VerticalAlignment="Top" Width="100.6" Height="23" FontFamily="Segoe Script" FontSize="16" TextWrapping="Wrap"><Run Text="Имя"/><Run Text=":"/></TextBlock>
+		<TextBox HorizontalAlignment="Right" Margin="0,134.4,18.547,0" VerticalAlignment="Top" Width="122.853" Height="23" FontFamily="Segoe Script" FontSize="14.667" RenderTransformOrigin="0.199,0.522" TextWrapping="Wrap"/>
+		<Button HorizontalAlignment="Right" Margin="0,0,18.547,125.2" Style="{DynamicResource Button-Sketch}" Width="122.853" Content="Удалить&#xa;профиль" FontFamily="Segoe Script" FontSize="16" RenderTransformOrigin="0.468,-1.018" VerticalAlignment="Bottom" Height="56">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pb:NavigateToScreenAction TargetScreen="lab1Screens.Screen_2_4"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+	</Grid>
+</UserControl>
